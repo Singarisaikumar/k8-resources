@@ -7,13 +7,16 @@ spec:
    - name: nginx
      image: nginx
      env:
-     - name: course
-       valueFrom:
-         configMapKeyRef:
-           name: devopswithaws
-           key: course
-     - name: trainer
-       valueFrom:
-         configMapKeyRef:
-           name: devopswithaws
-           key: trainer
+     configMapRef:
+       name: devopswithaws
+    #  env:
+    #  - name: course
+    #    valueFrom:
+    #      configMapKeyRef:
+    #        name: devopswithaws
+    #        key: course
+    #  - name: trainer
+    #    valueFrom:
+    #      configMapKeyRef:
+    #        name: devopswithaws
+    #        key: trainer
