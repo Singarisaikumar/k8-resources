@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: Devopswithaws
+  name: devopswithaws
 data:
   course: "DevOps with AWS"
   trainer: "sivakumar"
