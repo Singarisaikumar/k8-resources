@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: nginx
-labels:
-  name: nginx
-  tier: frontend
+  labels:
+    name: nginx
+    tier: frontend
 spec:
   replicas: 3
   selector:
@@ -21,4 +21,3 @@ spec:
       containers:
       - name: nginx
         image: nginx
-        
