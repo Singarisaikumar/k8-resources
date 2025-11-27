@@ -32,7 +32,7 @@ kind: Pod
 metadata:
   name: efs-app
   labels:
-  purpose: efs-static
+    purpose: efs-static
 spec:
   containers:
   - name: app
